@@ -1,28 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: "Poppins";
+
+  background-color: #342e37;
+  height: 90vh;
+
+  display: flex;
+  align-items: center;
+}
+
 #container {
-    width: 100%;
+  width: 100%;
 }
 
 #title {
-    text-align: center;
+  text-align: center;
+  color: #fafffd;
+  padding-bottom: 2rem;
 }
 
 #board {
-    background-color: rgb(247, 247, 247);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 150px;
-    height: 150px;
-    margin: auto;
+  /* background-color: rgb(247, 247, 247); */
+  /* background-color: #5F5464; */
+
+  /* width: 150px;
+    height: 150px; */
+
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+
+  gap: 0.5rem;
+  width: 300px;
+  height: 300px;
+  margin: auto;
 }
 
 .tictactoeBox {
-    width: 49px;
-    height: 49px;
-    border: 1px solid black;
+  width: 99px;
+  height: 99px;
+  border-radius: 1rem;
+  background-color: #5f5464;
 }
 
 #show {
-    display: none;
-    text-align: center;
-    margin-top: 10px;
+  display: none;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+#show button {
+  border-radius: 2rem;
+  background-color: #fafffd;
+  color: #11477e;
+  font-weight: 700;
+  font-family: "Poppins";
+ 
+
+  padding: 10px 20px;
+  width: 100px;
+}
+
+#info-display {
+  /* display: none; */
+  text-align: center;
+  color: white;
+  padding-top: 1rem;
+
+  z-index: 999;
+}
+
+.X-style {
+  color: #fa824c;
+  font-size: 3rem;
+  font-weight: 700;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.O-style {
+  color: #9fd356;
+  font-size: 3rem;
+  font-weight: 700;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

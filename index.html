@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <title>TicTacToe</title>
 </head>
 <body>
@@ -11,8 +11,11 @@
         <h1 id="title">TicTacToe</h1>
         <div id="board"></div>
         <div id="show">
-            <button id="prev">Previous</button>
+            <button onclick="prevMove()" id="prev">Previous</button>
+            <button onclick="nextMove()" id="next">Next</button>
+            <button onclick="resetGame()" id="reset">Reset</button>
         </div>
+        <h2 id="info-display"></h2>
     </div>
     <script src="script.js" defer></script>
 </body>
